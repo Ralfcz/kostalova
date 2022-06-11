@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gymnázium Opatov | Jídelníček</title>
+    <style>
+        body{
+            background-image: url("backgroundgradient.jpg");
+            background-size: 100%;
+            font-family: "Open Sans";
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            text-align: center;
+        }
+        .main{
+            width: 64%;
+            height: 100%;
+            margin: 0% 18% 0% 18%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 30px 30px 0 0;
+        }
+        table{
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        }
+        th, td {
+            padding: 10px 20px;
+        }
+        input{
+            font-family: "Open Sans";
+            font-size: 15px;
+        }
+        .rowheader{
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .chod{
+            width: 60%;
+        }
+        .foodtype{
+            border-right: none;
+            font-weight: bold;
+        }
+        .food{
+            border-left: none;
+        }
+        p{
+            text-align: center;
+            margin: 10px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Jídelní lístek GO</h1>
+</header>
+<div class="main">
+    <table>
+        <tr class="rowheader">
+            <th>Menu</th>
+            <th colspan="2" class="chod">Chod – Pondělí 13.6. 2022</th>
+            <th>Hodnocení</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Zeleninová s drožďovými knedlíčky<br>Čočka na kyselo</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Zeleninová s drožďovými knedlíčky<br>Alpský knedlík (švestková povidla) s van. krémem syp. mákem</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Zeleninová s drožďovými knedlíčky<br>Těstovinový salát s tuňákem</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr class="rowheader">
+            <th>Menu</th>
+            <th colspan="2" class="chod">Chod – Úterý 14.6. 2022</th>
+            <th>Hodnocení</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Kuřecí vývar s těstovinou<br>Vepřová kýta na smetaně</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Kuřecí vývar s těstovinou<br>Kuřecí rizoto se strouhaným sýrem</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Kuřecí vývar s těstovinou<br>Zeleninový salát s pom. sýrovou s celerem</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr class="rowheader">
+            <th>Menu</th>
+            <th colspan="2" class="chod">Chod – Středa 15.6. 2022</th>
+            <th>Hodnocení</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Cibulová s krutony<br>Kotlářský kotlík</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Cibulová s krutony<br>Smažené variace ( květák/hermelín)</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Cibulová s krutony<br>Zeleninový talíř s fazolovou pomazánkou</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr class="rowheader">
+            <th>Menu</th>
+            <th colspan="2" class="chod">Chod – Čtvrtek 16.6. 2022</th>
+            <th>Hodnocení</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Vločková<br>Vepřová játra na slanině</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Vločková<br>Pečený losos na másle</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Vločková<br>Zeleninový salát s pom. ze žervé s jarní cibulkou</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        </tr>
+        <tr class="rowheader">
+            <th>Menu</th>
+            <th colspan="2" class="chod">Chod – Pátek 17.6. 2022</th>
+            <th>Hodnocení</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Česneková s kroupami a bramborem<br>Vepřenky, obloha</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Česneková s kroupami a bramborem<br>Milánské těstoviny syp. sýrem</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="foodtype">Polévka<br>Jídlo</td>
+            <td class="food">Česneková s kroupami a bramborem<br>Zeleninový talíř s pom. tvarohová jarní</td>
+            <td><input type="button" onclick="alert('Úspěšně zvoleno!')" value="Zvolit"></td>
+    </table>
+    <p>Made with &hearts; by Klára Košťálová</p>
+</div>
+</body>
+</html>
